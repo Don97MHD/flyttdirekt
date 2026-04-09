@@ -14,7 +14,7 @@ const Hero = () => {
                     <div className="col col-xs-5 col-lg-5 col-12">
                         <div className="wpo-hero-section-text">
                             <div className="wpo-hero-title">
-                                <h1>Din Partner för en Stressfri Flytt</h1>
+                                <h1>Din Rekommenderade Flyttfirma i Stockholm</h1>
                             </div>
                             <div className="wpo-hero-subtitle">
                                 <p>Vi är en certifierad flyttfirma som erbjuder professionella och trygga flytt- och städtjänster för dig och ditt företag.</p>

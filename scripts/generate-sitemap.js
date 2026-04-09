@@ -26,6 +26,7 @@ async function generateSitemap() {
         '/pianoflytt/',
         '/blogg/',
         '/villkor/',
+        '/flyttfirma-stockholm-goteborg/',
         '/flyttfirma-helsingborg/' 
     ];
     

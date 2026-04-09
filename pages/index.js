@@ -13,15 +13,34 @@ import Testimonial from '../components/Testimonial/Testimonial';
 import BlogSection from '../components/BlogSection/BlogSection.js';
 import PartnerSection from '../components/PartnerSection/PartnerSection';
 import Footer from '../components/footer/Footer.js';
-import Head from 'next/head';
+import SEO from '../components/SEO/SEO';
+import JsonLd from '../components/SEO/JsonLd';
+import { LocalBusinessSchema, OrganizationSchema } from '../components/SEO/StructuredData';
+import SEOContent from '../components/SEOContent';
 
 const HomePage = () => {
+    const localBusinessSchema = LocalBusinessSchema({
+        name: 'Flyttdirekt',
+        telephone: '+46701234567',
+        email: 'info@flyttdirekt.se',
+        address: {
+            street: 'Storgatan 1',
+            locality: 'Stockholm',
+            postalCode: '10120',
+            country: 'SE',
+        },
+    });
+
     return (
         <Fragment>
-            <Head>
-                <title>Flyttfirma Stockholm - Flytthjälp & Flyttstädning | Flyttdirekt.se</title>
-                <meta name="description" content="Flyttdirekt är din pålitliga flyttfirma i Stockholm. Vi erbjuder professionell flytthjälp, flyttstädning med garanti, och säker magasinering. Få en kostnadsfri offert!" />
-            </Head>
+            <SEO
+                title="Flyttfirma Stockholm | Flytthjälp & Flyttstädning | Flyttdirekt"
+                description="Flyttdirekt är din pålitlig flyttfirma i Stockholm. Vi erbjuder professionell flytthjälp, flyttstädning med garanti, och säker magasinering. Få en kostnadsfri offert!"
+                canonical="https://www.flyttdirekt.se"
+                ogImage="https://www.flyttdirekt.se/images/hero-banner.jpg"
+            />
+            <JsonLd data={localBusinessSchema} />
+            <JsonLd data={OrganizationSchema} />
             <Navbar />
             <Hero />
             <ServiceSection />
@@ -33,6 +52,7 @@ const HomePage = () => {
             <Testimonial />
             <BlogSection/>
             <PartnerSection />
+            <SEOContent />
             <Footer />
             <Scrollbar />
         </Fragment>

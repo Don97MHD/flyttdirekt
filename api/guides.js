@@ -11,7 +11,7 @@ const guides = [
         metaDescription: 'Undrar du vad det kostar att anlita en flyttfirma i Stockholm? Vår guide går igenom timpriser, fasta priser, RUT-avdrag och faktorer som påverkar priset.',
         content: `
             <h2>Vad Kostar en Flyttfirma i Stockholm?</h2>
-            <p>Att anlita en flyttfirma är en investering i en smidig och stressfri flytt. Men vad kostar det egentligen? Priset för att anlita en <strong>flyttfirma i Stockholm</strong> kan variera kraftigt beroende på flera faktorer. I den här guiden bryter vi ner kostnaderna så att du kan få en tydlig bild av vad du kan förvänta dig.</p>
+            <p>Att anlita en flyttfirma är en investering i en smidig och stressfri flytt. Men vad kostar det egentligen? Priset för att anlita en <a href="https://www.flyttdirekt.se/">flyttfirma i Stockholm</a> kan variera kraftigt beroende på flera faktorer. I den här guiden bryter vi ner kostnaderna så att du kan få en tydlig bild av vad du kan förvänta dig.</p>
             
             <h3>Timpris vs. Fast Pris – Vad ska man välja?</h3>
             <p>De flesta flyttfirmor erbjuder antingen ett fast pris för hela flytten eller ett löpande timpris.</p>
@@ -41,7 +41,7 @@ const guides = [
         metaDescription: 'Hur mycket väger ett piano? Vi förklarar vikten på olika pianotyper, från pianinon till konsertflyglar, och varför det är avgörande för en säker pianoflytt.',
         content: `
             <h2>Vad Väger ett Piano?</h2>
-            <p>Ett piano är inte bara ett vackert instrument, det är också ett extremt tungt och otympligt föremål. Att känna till vikten är avgörande för att kunna planera en säker <strong>pianoflytt</strong>. Vikten varierar kraftigt beroende på typ, ålder och material.</p>
+            <p>Ett piano är inte bara ett vackert instrument, det är också ett extremt tungt och otympligt föremål. För att säkerställa en säker pianoflytt rekommenderar vi att anlita en <a href="https://www.flyttdirekt.se/">flyttfirma i Stockholm</a>. Att känna till vikten är avgörande för att kunna planera en säker <strong>pianoflytt</strong>. Vikten varierar kraftigt beroende på typ, ålder och material.</p>
 
             <h3>Genomsnittlig Vikt för Olika Pianotyper:</h3>
             <ul>
@@ -67,7 +67,7 @@ const guides = [
         metaDescription: 'Maximera ditt RUT-avdrag för flyttjänster. Lär dig vilka tjänster som är avdragsgilla, hur du ansöker, och hur mycket du kan spara på din flytt.',
         content: `
             <h2>Allt du Behöver Veta om RUT-avdrag för Flyttjänster</h2>
-            <p>RUT-avdraget är en fantastisk möjlighet att sänka kostnaden för din flytt. RUT står för Rengöring, Underhåll och Tvätt, och sedan 2016 inkluderas även flyttjänster. Här reder vi ut alla frågetecken.</p>
+            <p>RUT-avdraget är en fantastisk möjlighet att sänka kostnaden för din flytt från en <a href="https://www.flyttdirekt.se/">flyttfirma i Stockholm</a>. RUT står för Rengöring, Underhåll och Tvätt, och sedan 2016 inkluderas även flyttjänster. Här reder vi ut alla frågetecken.</p>
 
             <h3>Vilka Flyttjänster Ger Rätt till RUT-avdrag?</h3>
             <p>Du kan få avdrag för arbetskostnaden för en rad olika tjänster i samband med din flytt. De vanligaste är:</p>
@@ -98,7 +98,7 @@ const guides = [
         metaDescription: 'Att välja rätt flyttfirma i Stockholm kan vara svårt. Följ vår checklista med 8 experttips för att hitta en pålitlig, rekommenderad och prisvärd flyttfirma.',
         content: `
             <h2>Checklista: Så Väljer du Rätt Flyttfirma i Stockholm</h2>
-            <p>Stockholms flyttmarknad är stor och det kan vara svårt att veta vilken aktör man ska lita på. En lyckad flytt börjar med valet av en professionell och <strong>rekommenderad flyttfirma</strong>. Följ vår checklista för att göra ett tryggt val.</p>
+            <p>Stockholms flyttmarknad är stor och det kan vara svårt att veta vilken aktör man ska lita på. En lyckad flytt börjar med valet av en professionell och rekommenderad <a href="https://www.flyttdirekt.se/">flyttfirma i Stockholm</a>. Följ vår checklista för att göra ett tryggt val.</p>
             
             <ol>
                 <li><strong>Kontrollera F-skatt och Försäkringar:</strong> Det absolut viktigaste. En seriös firma har F-skattsedel och en gällande transportöransvarsförsäkring (som täcker dina saker under flytten). Be om att få se bevis!</li>
@@ -118,7 +118,7 @@ const guides = [
         metaDescription: 'Vår kompletta checklista för flyttstädning, rum för rum. Följ guiden för att säkerställa att din städning blir godkänd vid besiktningen.',
         content: `
             <h2>Checklista för Garanterat Godkänd Flyttstädning</h2>
-            <p>En flyttstädning är mycket mer omfattande än en vanlig veckostädning. För att säkerställa att städningen blir godkänd av hyresvärden eller de nya ägarna, är det bäst att följa en detaljerad checklista. Här är vad som behöver göras, rum för rum.</p>
+            <p>En flyttstädning är mycket mer omfattande än en vanlig veckostädning. För att säkerställa att städningen blir godkänd av hyresvärden eller de nya ägarna, rekommenderar vi att anlita en professionell <a href="https://www.flyttdirekt.se/">flyttfirma i Stockholm</a> som följer en detaljerad checklista. Här är vad som behöver göras, rum för rum.</p>
 
             <h3>Alla Rum (Vardagsrum, Sovrum, Hall)</h3>
             <ul>
@@ -158,7 +158,7 @@ const guides = [
         metaDescription: 'Planerar du en långflytt mellan Göteborg och Stockholm? Vår guide täcker allt du behöver veta om kostnader, planering och att välja rätt flyttfirma för långdistans.',
         content: `
             <h2>Guide för Långflytt: Stockholm - Göteborg</h2>
-            <p>Att flytta mellan Sveriges två största städer är ett stort projekt som kräver noggrann planering. En långdistansflytt skiljer sig från en lokal flytt på flera sätt, från prissättning till logistik. Här är våra bästa tips för en smidig flytt mellan <strong>Stockholm och Göteborg</strong>.</p>
+            <p>Att flytta mellan Sveriges två största städer är ett stort projekt som kräver noggrann planering. En långdistansflytt skiljer sig från en lokal flytt på flera sätt, från prissättning till logistik. Här är våra bästa tips från en erfaren <a href="https://www.flyttdirekt.se/">flyttfirma i Stockholm</a> för en smidig flytt mellan <strong>Stockholm och Göteborg</strong>.</p>
             
             <h3>Vad Kostar en Flytt mellan Stockholm och Göteborg?</h3>
             <p>För långflyttar är ett <strong>fast pris</strong> nästan alltid att föredra. Det ger dig en tydlig kostnadsbild och skyddar mot oväntade utgifter för restid och eventuella förseningar. Priset baseras främst på volymen av ditt bohag (antalet kubikmeter). En uppskattning kan vara allt från 10 000 kr till över 30 000 kr beroende på storlek.</p>
@@ -180,7 +180,7 @@ const guides = [
         metaDescription: 'En pianoflytt kräver specialkunskap. Läs vår kompletta guide om hur man förbereder, vilken utrustning som behövs och varför du bör anlita proffs.',
         content: `
             <h2>Den Kompletta Guiden till Pianoflytt</h2>
-            <p>Ett piano är ofta en kär och värdefull ägodel. Till skillnad från andra möbler är det både extremt tungt och mycket ömtåligt. En felaktig hantering kan leda till dyra reparationer eller i värsta fall förstöra instrumentet. Därför är en professionell <strong>pianoflytt</strong> avgörande.</p>
+            <p>Ett piano är ofta en kär och värdefull ägodel. Till skillnad från andra möbler är det både extremt tungt och mycket ömtåligt. En felaktig hantering kan leda till dyra reparationer eller i värsta fall förstöra instrumentet. Därför är en professionell pianoflytt från en <a href="https://www.flyttdirekt.se/">flyttfirma i Stockholm</a> avgörande.</p>
 
             <h3>Förberedelser inför Pianoflytten</h3>
             <p>Innan flyttfirman anländer kan du förbereda för att underlätta processen:</p>

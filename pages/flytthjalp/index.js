@@ -7,9 +7,11 @@ import PageTitle from '../../components/pagetitle/PageTitle';
 import Footer from '../../components/footer/Footer.js';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Image from 'next/image';
-import Head from 'next/head';
 import Link from 'next/link';
 import ServiceSidebar from '../../components/ServiceSidebar/ServiceSidebar';
+import SEO from '../../components/SEO/SEO';
+import JsonLd from '../../components/SEO/JsonLd';
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '../../components/SEO/StructuredData';
 
 // استخدام صور مناسبة من القالب
 import serviceImg from '/public/images/service/1.jpg';
@@ -17,61 +19,47 @@ import serviceImg2 from '/public/images/service-single/2.jpg';
 import serviceImg3 from '/public/images/service-single/3.jpg';
 
 const FlytthjalpPage = () => {
-    // Schema Markup لخدمة Flytthjälp
-    const serviceSchema = {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Flytthjälp",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Flyttdirekt.se",
-            "image": "https://www.flyttdirekt.se/images/logo.svg",
-            "telephone": "+46-8-123-45-678",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Exempelgatan 1",
-                "addressLocality": "Stockholm",
-                "postalCode": "12345",
-                "addressCountry": "SE"
-            },
-            "priceRange": "Kontakta för offert"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Stockholm"
-        },
-        "description": "Professionell och försäkrad flytthjälp i Stockholm. Vi erbjuder kompletta flyttlösningar för privatpersoner och företag, inklusive packning, transport och montering."
-    };
+    // Breadcrumb Schema
+    const breadcrumbs = BreadcrumbSchema([
+        { name: 'Home', url: 'https://www.flyttdirekt.se' },
+        { name: 'Tjänster', url: 'https://www.flyttdirekt.se/#services' },
+        { name: 'Flytthjälp', url: 'https://www.flyttdirekt.se/flytthjalp/' },
+    ]);
 
-    // Schema Markup للأسئلة الشائعة (FAQ)
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [{
-            "@type": "Question",
-            "name": "Vad ingår i er flytthjälp?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Vår standardtjänst för flytthjälp inkluderar erfaren personal, transport med fullt utrustade flyttbilar, bärhjälp för tunga möbler, och full försäkring för dina ägodelar under hela processen. Vi kan även erbjuda tilläggstjänster som packning och montering."
-            }
-        }, {
-            "@type": "Question",
-            "name": "Hur beräknas priset för flytthjälp?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Priset baseras på flera faktorer, såsom bostadens storlek, mängden bohag, avståndet mellan adresserna och vilka tilläggstjänster du väljer. Vi erbjuder alltid en kostnadsfri offert med ett tydligt och transparent pris. Du har även rätt till RUT-avdrag, vilket vi hjälper dig med."
-            }
-        }]
-    };
+    // Service Schema
+    const serviceMarkup = ServiceSchema(
+        'Flytthjälp i Stockholm',
+        'Professionell och försäkrad flytthjälp i Stockholm. Vi erbjuder kompletta flyttlösningar för privatpersoner och företag, inklusive packning, transport och montering.',
+        { 
+            areaServed: 'Stockholm och omkringliggande områden, Sverige',
+            price: 'Kontakta för offert',
+            priceCurrency: 'SEK'
+        }
+    );
+
+    // FAQ Schema
+    const faqMarkup = FAQSchema([
+        {
+            question: 'Vad ingår i er flytthjälp?',
+            answer: 'Vår standardtjänst för flytthjälp inkluderar erfaren personal, transport med fullt utrustade flyttbilar, bärhjälp för tunga möbler, och full försäkring för dina ägodelar under hela processen. Vi kan även erbjuda tilläggstjänster som packning och montering.'
+        },
+        {
+            question: 'Hur beräknas priset för flytthjälp?',
+            answer: 'Priset baseras på flera faktorer, såsom bostadens storlek, mängden bohag, avståndet mellan adresserna och vilka tilläggstjänster du väljer. Vi erbjuder alltid en kostnadsfri offert med ett tydligt och transparent pris. Du har även rätt till RUT-avdrag, vilket vi hjälper dig med.'
+        }
+    ]);
 
     return (
         <Fragment>
-            <Head>
-                <title>Flytthjälp Stockholm - Pris & Offert från en säker Flyttfirma</title>
-                <meta name="description" content="Behöver du flytthjälp i Stockholm? Få ett fast pris från en rekommenderad flyttfirma. Vi erbjuder säker bohagsflytt, företagsflytt & pianoflytt med RUT-avdrag." />
-                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            </Head>
+            <SEO
+                title="Flytthjälp Stockholm - Pris & Offert från en säker Flyttfirma"
+                description="Behöver du flytthjälp i Stockholm? Få ett fast pris från en rekommenderad flyttfirma. Vi erbjuder säker bohagsflytt, företagsflytt & pianoflytt med RUT-avdrag."
+                canonical="https://www.flyttdirekt.se/flytthjalp/"
+                ogImage="https://www.flyttdirekt.se/images/service-banner.jpg"
+            />
+            <JsonLd data={breadcrumbs} />
+            <JsonLd data={serviceMarkup} />
+            <JsonLd data={faqMarkup} />
             <Navbar />
             <PageTitle pageTitle={'Professionell Flytthjälp i Stockholm'} pagesub={'Våra Tjänster'} />
             <section className="wpo-service-single-section section-padding">

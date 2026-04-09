@@ -51,7 +51,15 @@ const LocationSection = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* *** END: NEW CUSTOM BOX FOR HELSINGBORG *** */}
+                        <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+    <div className="wpo-work-item" style={{ border: '1px solid #247ffb' }}>
+        <div className="wpo-work-text">
+            <h3><Link onClick={ClickHandler} href="/flyttfirma-stockholm-goteborg/">Stockholm - Göteborg</Link></h3>
+            <p>Långdistansflytt</p>
+            <Link className="read-more" onClick={ClickHandler} href="/flyttfirma-stockholm-goteborg/">Läs mer</Link>
+        </div>
+    </div>
+</div>
                     </div>
                 </div>
             </div>
